@@ -1,0 +1,14 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"author": "Axel Coézard",
+	"description": "Le code source de mon portfolio axelcoezard.com",
+	"main": "index.js",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-sass": "^4.1.0",
+		"node-sass": "^4.14.1"
+	},
+	"license": "ISC"
+}

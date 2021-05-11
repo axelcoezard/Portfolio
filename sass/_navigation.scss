@@ -1,0 +1,80 @@
+/**
+ * VARIABLES
+ */
+$navHeight: 140px;
+
+/**
+ * CSS RULES
+ */
+.Navigation {
+	position: fixed;
+	height: $navHeight;
+	width: 100%;
+	z-index: 1000;
+}
+
+.Navigation-container {
+	width: $containerWidth;
+	margin: 0 auto;
+
+	display: flex;
+}
+
+.Navigation-left,
+.Navigation-right {
+	flex: 0 0 50%;
+	height: 100%;
+}
+
+.Navigation-left {
+	text-align: left;
+}
+
+.Navigation-right {
+	text-align: right;
+}
+
+.Navigation-brand,
+.Navigation-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.Navigation-brand {
+	font-family: "Dancing Script";
+	font-size: 3.25rem;
+	font-weight: bold;
+	line-height: $navHeight;
+}
+
+.Navigation-link {
+	$size: $navHeight / 3;
+
+	display: inline-block;
+	height: $size;
+	min-width: $size;
+
+	margin: $size 0 $size 30px;
+
+	text-align: center;
+	i {
+		font-size: $size / 1.5;
+		line-height: $size;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.Navigation-container {
+		width: 90%;
+		flex-direction: column;
+	}
+	.Navigation-left,
+	.Navigation-right {
+		flex: 0 0 100%;
+		text-align: center;
+	}
+
+	.Navigation-link {
+		margin: 0 15px;
+	}
+}

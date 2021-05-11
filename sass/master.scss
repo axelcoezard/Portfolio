@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+$blue: #44a5dd;
+$dark-blue: #2f5faa;
+
+$containerWidth: 80%;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+@import "header";
+@import "navigation";
